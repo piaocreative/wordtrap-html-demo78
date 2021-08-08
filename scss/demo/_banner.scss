@@ -1,0 +1,137 @@
+
+/* ----------------------------------------------------------------
+
+	banner.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Banner
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for banner. Thanks!
+-----------------------------------------------------------------*/
+
+
+#banner {
+    position: relative;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        @include media-breakpoint-down(md) {
+            height: 50%;
+        }
+    }
+
+    .banner-wrap {
+        padding-left: 4.375rem;
+        padding-right: 4.375rem;
+    }
+
+    &.about-banner {
+        background-image: url(../images/banner/about-banner.png);         
+        background-repeat: no-repeat;
+        background-size: cover;       
+        background-position: 50%;
+        height: auto;
+        padding-top: 14.25rem;
+        top: -$header-height;
+        margin-bottom: -$header-height;
+        padding-bottom: 11rem;
+
+        @include media-breakpoint-down(lg) {
+
+            background-position-y: 2rem; 
+            
+        }
+    }
+
+    &.contact-banner {
+        background-image: url(../images/banner/contact-banner.png);         
+        background-repeat: no-repeat;
+        background-size: cover;       
+        background-position: 50%;
+        height: auto;
+        padding-top: 14.25rem;
+        top: -$header-height;
+        margin-bottom: -$header-height;
+        padding-bottom: 11rem;
+
+        @media (min-width: 992px) {
+            background-size: cover;       
+            background-position: -20rem;
+        }
+    }
+}
+// *--------- more --------//
+
+.banner-left, .banner-right {
+    width: 21rem;
+    height: 19rem;
+
+    @include media-breakpoint-down(lg) {
+        width: 11rem;
+        height: 16rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 8rem;
+        height: 7rem;
+    }
+}
+
+.banner-left  {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    img {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+}
+
+.banner-right {
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+
+    img {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        bottom: 5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        bottom: 43.3rem;
+    }
+}
+
+.banner-arrows {
+
+	padding-top: 1em;
+	padding-bottom: 1rem;
+
+	a {
+		color: $secondary;
+		font-size: 3rem;
+
+        &:hover {
+            color: $theme-color;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding-right: 2rem !important;
+            padding-left: 2rem !important;
+        }
+	}
+}

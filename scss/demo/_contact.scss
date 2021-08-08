@@ -1,0 +1,78 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+.contact {
+	.contact-title {
+		font-size: $h1-font-size;
+		font-family: $body-font;
+		font-weight: 800;
+		color: $secondary;
+		line-height: 4rem;
+	}
+
+	.contact-icons {
+
+        padding: 0;
+        list-style: none;
+
+		&.dark-contact a {
+			color: white;
+			font-size: 0.7rem;
+		}
+
+		&.light-contact a {
+			color: $secondary;
+		}
+
+		li {
+            margin-bottom: 0.3rem;
+			
+			a {
+				font-family: $body-font;
+				line-height: 2rem;
+                color: white !important;
+                text-decoration: none;
+                font-size: 1rem;
+                font-family: $body-font;
+
+				&:hover {
+					color: $primary;
+				}
+
+				.contact-icon {
+					color: $primary;
+					display: inline-block;
+					margin-right: 1.2rem;
+					font-size: 1.2rem;
+					width: 1.8rem;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+    form {
+        label {
+            color: #777675;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+		button {
+			font-size: 0.875rem;
+		}
+    }
+
+    @include media-breakpoint-down(lg) {
+        .contact-icons {
+            margin: 0 !important;
+            padding: 0.875rem;
+        }
+
+        form {
+            padding: 1rem !important;
+        }
+    }
+}

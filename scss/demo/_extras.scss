@@ -1,0 +1,133 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link-icon {
+	background-image: url(../images/icons/link.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 2.5625rem;
+	height: 2.5625rem;
+
+	&.black {
+		background-image: url(../images/icons/link_black.png);
+	}
+}
+
+a {
+	.link-icon {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.link-icon {
+			@include translateX(1rem);
+		}
+	}	
+}
+
+#subscribe-form {
+    width: 20%;
+}
+
+@include media-breakpoint-down(sm) {
+    #subscribe-form {
+        width: 50% !important;
+    }
+}
+
+// -----------------about side------------------------//
+
+.about-title{
+    padding-right: 9rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #61605f;
+        margin-bottom: 2rem;
+    }
+}
+
+.about-banner {
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+        padding: 0 !important;
+    }
+}
+
+.banner-sm {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    img {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        position: relative;
+
+        img {
+            border-radius: 0;
+        }
+    }
+}
+
+.about-content {
+    margin-top: -8rem;
+    padding: 7rem;
+
+    h3 {
+        color: #a7d7f2;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #61605f;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .border-bottom {
+        margin-top: 4rem;
+        width: 4rem;
+        border-bottom: 1px solid $dark !important;
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 1rem;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+
+        padding: 0.875rem !important;
+
+        p {
+            padding: 0 !important;
+        }
+    }
+}
+

@@ -1,0 +1,47 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-404 {
+    position: relative;
+
+    .error-content {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.125rem;
+        font-family: $heading-font;
+        color: $white;
+    }
+
+    h2 {
+        font-size: 20.25rem;
+        color: $white;
+    }
+
+    button {
+        font-size: 0.875rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        h2 {
+            font-size: 15.25rem;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        
+        h2 {
+            font-size: 7.25rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
