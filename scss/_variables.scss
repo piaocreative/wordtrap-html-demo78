@@ -37,13 +37,7 @@ $h3-font-size:                	2.5rem;
 $h4-font-size:                	1.75rem;
 $h5-font-size:                	1.125rem;
 $h6-font-size:               	  0.75rem;
-$body-size:						          3vh;
-$side-bar-text:					        0.9rem;
-$no-p-r:						            0rem;
-$no-p-l:						            0rem;
 
-$button-radius:					        4rem;
-$footer-size:					          0.9rem;
 
 // space//
 $spacer: 2rem !default;
@@ -60,9 +54,6 @@ $spacers:(
   8: $spacer * 8,
 ) !default;
 
-$container-max-widths: (
-  xl: 75%
-);
 
 $grid-gutter-width:             2.5rem;
 
