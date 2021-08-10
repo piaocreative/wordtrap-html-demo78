@@ -297,6 +297,10 @@
 .shop-now-link {
 	margin-top: 7rem;
 
+	a {
+		text-decoration: none;
+	}
+
 	@include media-breakpoint-down(lg) {
 		margin: 0 !important;
 	}
