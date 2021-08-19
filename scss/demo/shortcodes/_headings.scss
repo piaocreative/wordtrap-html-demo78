@@ -45,8 +45,9 @@
 	}
 
 	p {
-		font-size: 1.125rem;
-		line-height: 2rem;
+		font-size: 0.925rem;
+		color: #acacac;
+		line-height: 1.8rem;
 	}
 
 	@include media-breakpoint-down(lg) {
