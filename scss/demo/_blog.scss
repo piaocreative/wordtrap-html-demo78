@@ -12,17 +12,13 @@
 .post {
 	position: relative;
 	margin-bottom: 0.875rem;
-
-	@include media-breakpoint-down(lg) {
-		margin: 0;
-	}
 }
 
 .post-thumbnail {
 	display: block;
 	position: relative;
 	width: 100%;
-	height: 50%;
+	height: 100%;
 
 	img {
 		border-radius: 0.5rem;
@@ -30,15 +26,7 @@
 
 	a {
 		display: block;
-	}
-
-	@include media-breakpoint-down(lg) {
-		height: auto !important;
-
-		img {
-			height: auto !important;
-		}
-	}
+	}	
 }
 
 .post-content {
@@ -66,4 +54,8 @@
 	}
 }
 
-
+.slick-posts {
+	.slick-slide {
+		height: auto;
+	}
+}

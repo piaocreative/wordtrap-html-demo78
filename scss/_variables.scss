@@ -22,6 +22,8 @@ $third-color:                   #2e2e2e;
 // Theme Colors
 $primary:                      $theme-color;
 $secondary:                   #282828;
+$success:                     #c0ded8;
+$light:                       #ccccc8;
 $dark:                        #61605f;
 
 //-------------------- Font Families --------------------//
@@ -66,10 +68,10 @@ $topbar-hover-color:            #ddcef5;
 
 //-------------------- Header --------------------//
 
-$header-height:                 6.5rem;
+$header-height:                 6.625rem;
 
 // Sticky Header
-$sticky-header-height:          5.625rem;
+$sticky-header-height:          5rem;
 
 
 // top Button

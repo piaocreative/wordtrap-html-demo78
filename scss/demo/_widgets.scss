@@ -41,9 +41,7 @@
 	// Widget - Social
 	&.widget-social {
 		.social-icons {
-
 			padding: 0;
-			
 			list-style: none;
 
 			li {
@@ -63,6 +61,7 @@
 					vertical-align: middle;
 					text-align: center;
 					border-radius: 0.5rem;	
+
 					@include transition(all 0.3s ease-in-out);
 		
 					&:hover {
@@ -108,9 +107,7 @@
 	}
 
 	@include media-breakpoint-down(md) {
-
 		&.widget-links {
-
 			.widget-content {
 				justify-content: space-between;
 			}
@@ -120,24 +117,23 @@
 				margin: auto;
 			}
 		}
-}
+	}
 
 	// Widget - Payments
 	&.widget-payment {
-
 		p {
 			color: #61605f;
 			display: block;
 			text-decoration: none;
 			font-size: 0.675rem;
 		}
-		.payments {
 
+		.payments {
 			.payment-icon {
 				display: inline-block;
 				vertical-align: middle;
 				margin-right: .5rem;
-				width: 5rem;
+				width: 4.375rem;
 				height: 2.5rem;
 				background-color: #2e2e2e;
 				padding: 0.2rem;
@@ -147,24 +143,29 @@
 				border-radius: .25rem;
 
 				@include border-radius(0.25rem);
+
 				@include media-breakpoint-down(sm) {
 					width: 4rem !important;
 				}
 
 				&.visa {
-					background-image: url(../images/payments/visa.svg);
+					background-image: url(../images/payments/visa.png);
 				}
 
 				&.paypal {
-					background-image: url(../images/payments/paypal.svg);
+					background-image: url(../images/payments/paypal.png);
 				}
 
 				&.express {
-					background-image: url(../images/payments/express.svg);
+					background-image: url(../images/payments/express.png);
 				}
 
 				&.mastercard {
-					background-image: url(../images/payments/mastercard.svg);
+					background-image: url(../images/payments/mastercard.png);
+				}
+
+				&.jcb {
+					background-image: url(../images/payments/jcb.png);
 				}
 			}
 		}
@@ -173,7 +174,6 @@
 	// Widget - custom html
 	&.widget-custom-html {
 		.widget-content {
-
 			a {
 				display: block;
 				text-decoration: none;
@@ -208,8 +208,8 @@
 			p {
 				letter-spacing: 0.1rem
 			}
-			#widget-feedback-form {
 
+			#widget-feedback-form {
 				input {
 					background-color: #f9f9f9;
 					color:#d0d0d0;
@@ -224,14 +224,16 @@
 
 	// Widget - Subscribe
 	&.widget-subscribe {
+		background-image: url(../images/shop/shop3_3.png);
+		background-position: left top;
+		background-repeat: no-repeat;
+		border-radius: 0.5rem;
+		padding-top: 8.5rem;
+		padding-bottom: 8.5rem;
 
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-
-		.widget-content {
+		.widget-content {	
+			margin: 0 auto;		
+			width: 21.125rem;
 			
 			span {
 				background-color: #a7d7f2;
@@ -248,40 +250,13 @@
 			}
 
 			#widget-subscribe-form {
-				
+				margin-bottom: 0;
+
 				.input-group-append {
 					margin-left: -2.875rem;
 				}
-			}
-
-		
-		}
-		@include media-breakpoint-down(sm) {
-			.p-7 {
-				padding: 0 !important;
-			}
-
-			.widget-content {
-				p {
-					line-height: 1.5rem;
-					margin-bottom: 1rem !important;
-				}
-
-				form {
-					width: 80%;
-					margin: auto;
-
-					input {
-						padding: 0.5rem 1.5rem;
-					}
-
-					button {
-						padding: 0.8rem 1rem;
-					}
-				}
-			}
-
-		}
+			}		
+		}		
 	}
 
 	// Widget - Products

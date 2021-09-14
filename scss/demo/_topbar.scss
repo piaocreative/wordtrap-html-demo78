@@ -67,6 +67,7 @@
 			width: 8.75rem;
 			margin: 0;
 			border-top: 3px solid $theme-color;
+			
 			@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 		}
 

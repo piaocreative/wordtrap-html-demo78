@@ -44,24 +44,16 @@ a {
 
 #subscribe-form {
     width: 20%;
-}
 
-@include media-breakpoint-down(sm) {
-    #subscribe-form {
+    @include media-breakpoint-down(sm) {
         width: 50% !important;
     }
 }
 
+
 // -----------------about side------------------------//
 
-.about-title{
-    padding-right: 9rem;
-
-    @include media-breakpoint-down(lg) {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
+.about-title {
     p {
         font-size: 1rem;
         color: #61605f;
@@ -69,22 +61,32 @@ a {
     }
 }
 
-.about-banner {
-    position: relative;
+.about-banner-img {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    position: absolute;
+    width: calc(50vw + 1320px / 12);
+    height: 100%;
+    left: 0;
+    top: 0;
 
     @include media-breakpoint-down(lg) {
-        padding: 0 !important;
+        position: initial;
+        width: 100%;
+        height: 30rem;
     }
 }
 
-.banner-sm {
+.banner-video {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -5rem;
     
     img {
         border-top-right-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
+        max-width: 20.625rem;
     }
 
     @include media-breakpoint-down(sm) {
@@ -96,9 +98,30 @@ a {
     }
 }
 
-.about-content {
-    margin-top: -8rem;
-    padding: 7rem;
+.history-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: calc(50vw - 1320px / 12);
+    height: 100%;
+    right: 0;
+    top: 0;
+
+    @include media-breakpoint-down(lg) {
+        position: initial;
+        width: 100%;
+        height: 30rem;
+    }
+}
+
+.history-content {    
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @include media-breakpoint-up(lg) {
+        margin-top: -5rem;
+    }
 
     h3 {
         color: #a7d7f2;
@@ -116,18 +139,9 @@ a {
         width: 4rem;
         border-bottom: 1px solid $dark !important;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             margin-top: 1rem;
-        }
-    }
-
-    @include media-breakpoint-down(lg) {
-
-        padding: 0.875rem !important;
-
-        p {
-            padding: 0 !important;
+            margin-bottom: 1rem;
         }
     }
 }
-

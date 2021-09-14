@@ -18,58 +18,16 @@
 
 #banner {
     position: relative;
+    
+    &.about-banner {        
+        padding-bottom: 5rem;
 
-    img {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-
-        @include media-breakpoint-down(md) {
-            height: 50%;
-        }
-    }
-
-    .banner-wrap {
-        padding-left: 4.375rem;
-        padding-right: 4.375rem;
-    }
-
-    &.about-banner {
-        background-image: url(../images/banner/about-banner.png);         
-        background-repeat: no-repeat;
-        background-size: cover;       
-        background-position: 50%;
-        height: auto;
-        padding-top: 14.25rem;
-        top: -$header-height;
-        margin-bottom: -$header-height;
-        padding-bottom: 11rem;
-
-        @include media-breakpoint-down(lg) {
-
-            background-position-y: 2rem; 
-            
-        }
-    }
-
-    &.contact-banner {
-        background-image: url(../images/banner/contact-banner.png);         
-        background-repeat: no-repeat;
-        background-size: cover;       
-        background-position: 50%;
-        height: auto;
-        padding-top: 14.25rem;
-        top: -$header-height;
-        margin-bottom: -$header-height;
-        padding-bottom: 11rem;
-
-        @media (min-width: 992px) {
-            background-size: cover;       
-            background-position: -20rem;
-        }
+        .banner-content {
+            padding-top: 12.625rem;
+            padding-bottom: 3.875rem;
+        }        
     }
 }
-// *--------- more --------//
 
 .banner-left, .banner-right {
     width: 21rem;
@@ -117,7 +75,6 @@
 }
 
 .banner-arrows {
-
 	padding-top: 1em;
 	padding-bottom: 1rem;
 

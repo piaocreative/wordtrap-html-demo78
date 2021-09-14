@@ -30,6 +30,7 @@
 
 </head>
 <body id="demo78">
+
     <!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
@@ -40,83 +41,129 @@
 
             <div id="header-wrap">
 
-                <nav class="navbar navbar-expand-lg navbar-dark">
-
+                <!-- Navbar
+                ============================================= -->
+                <nav class="navbar navbar-dark justify-content-start">
+    
                     <!-- Logo
                     ============================================= -->
                     <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                        <img src="images/saler-txt.png" alt="Saler Logo">
+                        <img src="images/logo.png" alt="Saler Logo" class="img-fluid">
                     </a>
+
+                    <!-- Top Links
+                    ============================================= -->
+                    <div id="top-links">
+
+                        <ul class="navbar-nav flex-row">
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div><!-- .top-links -->
                     
                     <!-- Navbar Toggler
                     ============================================= -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <!-- Navbar Collapse
+                        <img src="./images/icons/bar1.png" style="height: 1.3rem;">
+                    </button>                    
+
+                    <!-- Top Buttons
                     ============================================= -->
-                    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
+                    <div id="top-btns" class="d-none d-lg-block">
+                            
+                        <ul class="navbar-nav flex-row gap-2">
 
-                        <!-- Top Links
-                        ============================================= -->
-                        <div id="top-links">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><img src="./images/icons/bar.png" style="height: 1.3rem;"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>                                            
+                                </a>
+                            </li>
 
-                            <ul class="nav navbar-nav">
+                        </ul>
 
-                                <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" class="dropdown-item">EUR</a></li>
-                                        <li><a href="#" class="dropdown-item">AUD</a></li>
-                                        <li><a href="#" class="dropdown-item">GBP</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item pe-1">
-                                    <a href="#" class="nav-link text-primary"><img src="./images/icons/bar1.png" style="height: 1.3rem;"></a>
-                                </li>
-
-                            </ul>
-
-                        </div><!-- .top-links -->
-
-                        <!-- Top Buttons
-                        ============================================= -->
-                        <div id="top-btns">
-                                
-                            <ul class="navbar-nav flex-row gap-2">
-
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link"><img src="./images/icons/bar.png" style="height: 1.3rem;"></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <span data-cart-items="2">
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </span>                                            
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                        </div><!-- #top-btns -->
-
-                    </div><!-- #header-right-col -->
-
+                    </div><!-- #top-btns -->
+    
                 </nav>
-            
-            </div><!-- #header-wrap -->
+    
+                <!-- Navbar Collapse
+                ============================================= -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <ul id="primary-menu" class="navbar-nav">
+                        <li class="current nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>                                  
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Accessories</a>
+                        </li>                                    
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Blog</a>
+                        </li>
+                    </ul><!-- #primary-menu -->
+
+                    <!-- Top Buttons
+                    ============================================= -->
+                    <div id="top-mobile-btns" class="d-block d-lg-none">
+                            
+                        <ul class="navbar-nav flex-row gap-2">
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><img src="./images/icons/bar.png" style="height: 1.3rem;"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>                                            
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div><!-- #top-btns -->
+    
+                </div>
+
+            </div><!-- #header-wrap -->            
 
         </header><!-- #header -->
 
@@ -126,110 +173,127 @@
 
             <div class="content-wrap">
                 
-                <!-- About side
+                <!-- About Banner
                 ============================================= -->
-                <div class="row g-0">
+                <div id="banner" class="about-banner bg-secondary">
 
-                    <div class="col-lg-5 bg-secondary">
+                    <div class="container">
 
-                        <div class="section">
+                        <div class="row">
 
-                            <div id="page-title" class="offset-xl-4 pt-7">
-                                <h5 class="sub-title heading-font text-primary mb-1">Hello!</h5>
-                                <p class="title">About Us</p>
-    
+                            <div class="col-lg-4">
+
+                                <div class="banner-content">
+
+                                    <div id="page-title">
+                                        <h5 class="sub-title heading-font text-primary mb-1">Hello!</h5>
+                                        <p class="title">About Us</p>        
+                                    </div>
+        
+                                    <div class="about-title">    
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+                                    </div>
+
+                                </div>
+                                
                             </div>
+        
+                            <div class="col-lg-7 offset-lg-1 position-relative">
 
-                            <div class="about-title offset-xl-4">
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
-                    <div class="col-lg-7 about-banner pb-5">
-
-                        <img src="./images/banner/about-banner.png" class="img-fluid">
-
-                        <div class="banner-sm col-lg-3 col-md-3">
-                            <img src="./images/about/about1.png" class="img-fluid">
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-5">
-
-                        <img src="./images/about/about2.png" class="img-full">
-
-                    </div>
-
-                    <div class="about-content col-lg-7 bg-secondary pb-5">
-                        
-                        <div class="section">   
-
-                            <div class="heading-block">
-
-                                <h2 class="h1 heading-font title text-white">Our history</h2>
-    
-                            </div>
-
-                            <div class="row m-0 mt-4">
-
-                                <div class="col-lg-3">
-
-                                    <h3 class="heading-font">2021</h3>
-                                    <div class="border-bottom"></div>
-
+                                <div class="about-banner-img" style="background-image: url(images/banner/about-banner.png);"></div>
+        
+                                <div class="banner-video">
+                                    <img src="./images/about/about1.png" class="img-fluid">
                                 </div>
-
-                                <div class="col-lg-7">
-                                    <p class="ps-2 pe-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                    </p>
-                                </div>
-
-                                <div class="col-lg-3">
-
-                                    <h3 class="heading-font text-dark">2020</h3>
-                                    <div class="border-bottom"></div>
-
-                                </div>
-
-                                <div class="col-lg-7">
-                                    <p class="ps-2 pe-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                    </p>
-                                </div>
-
-                                <div class="col-lg-3">
-
-                                    <h3 class="heading-font text-dark">2019</h3>
-
-                                </div>
-
-                                <div class="col-lg-7">
-                                    <p class="ps-2 pe-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                    </p>
-                                </div>
-
+        
                             </div>
 
                         </div>
 
                     </div>
 
-                </div>
+                </div><!-- About Banner -->
+
+                <!-- History
+                ============================================= -->
+                <div class="bg-secondary">
+
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="col-lg-5 position-relative order-last order-lg-first">
+
+                                <div class="history-img" style="background-image: url(images/about/about2.png);"></div>
+        
+                            </div>
+        
+                            <div class="history-content col-lg-6 offset-lg-1 pb-5">
+                                
+                                <div class="section pb-0">   
+        
+                                    <div class="heading-block">
+        
+                                        <h2 class="h1 heading-font title text-white">Our history</h2>
+            
+                                    </div>
+        
+                                    <div class="row g-0 mt-4">
+        
+                                        <div class="col-xl-4">        
+                                            <h3 class="heading-font mb-0">2021</h3>
+                                            <div class="border-bottom"></div>        
+                                        </div>
+        
+                                        <div class="col-xl-8">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+        
+                                        <div class="col-xl-4">        
+                                            <h3 class="heading-font  mb-0 text-dark">2020</h3>
+                                            <div class="border-bottom"></div>
+        
+                                        </div>
+        
+                                        <div class="col-xl-8">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+        
+                                        <div class="col-xl-4">        
+                                            <h3 class="heading-font mb-0 text-dark">2019</h3>
+                                            <div class="border-bottom"></div>
+                                        </div>
+        
+                                        <div class="col-xl-8">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+        
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div><!-- History -->                
 
                 <!-- Ads
                 ============================================= -->
-                <div class="ads">
-
+                <div class="ads ads1">
                     <div class="ads-bg">
-                        <img src="images/ads/ads.png" alt="Ads Image" class="img-fluid w-100">
+                        <div class="ads-bg-img" style="background-image: url(images/ads/ads1.png);"></div>
+                    </div>        
+                    <div class="ads-body">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="h1 text-light mb-0 me-3">20%</h2>
+                            <h3 class="text-black mb-0">discount<br>for selfies</h3>
+                        </div>
                     </div>
-
                 </div><!-- Ads -->
 
                 <!-- logos
@@ -239,7 +303,7 @@
                     <div class="row">
 
                         <div class="col-12 p-2">
-                            <div class="logos d-flex justify-content-between">
+                            <div class="logos">
                                 <div class="logo-item d-flex"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
                                 <div class="logo-item d-flex"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
                                 <div class="logo-item d-flex"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
@@ -253,7 +317,7 @@
 
                 </div><!-- #logos -->
 
-               <!-- Best seller side
+                <!-- Best Seller
                 ============================================= -->
                 <div class="section pb-3">
 
@@ -269,44 +333,36 @@
 
                             <div class="col-md-6 col-lg-3 border-bottom border-end">
 
-                                <div class="product">                   
-
+                                <div class="product">         
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop3_1.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop3_2.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Sweatpants</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
                                     </div>   
-                                    
                                     <div class="onbest">Best</div>
-    
                                 </div>
 
                             </div>
 
                             <div class="col-md-6 col-lg-3 border-bottom border-end">
 
-                                <div class="product">                   
-
+                                <div class="product">     
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop3_2.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop3_1.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
-                                    </div>        
-    
+                                    </div>     
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Top</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
                                     </div>        
-    
                                     <div class="onbest">Best</div>
-
                                 </div>
 
 
@@ -314,124 +370,91 @@
 
                             <div class="col-md-12 col-lg-6 border-bottom">
 
-                                <div class="product">                   
-
-                                    <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop3_3.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop3_3.png" alt="Product Image" class="img-fluid"></a>
-                                        <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                                <div class="widget widget-subscribe mb-2">
+                                    <div class="widget-content text-center">
+                                        <h3 class="text-white heading-font fw-normal mb-2">Join <span>our club</span></h3>
+                                        <P class="h5 mb-2 text-white">Subscribe to the newslettr and bye everything at the disconnect</P>
+                                        <form id="widget-subscribe-form" action="#" method="post">
+                                            <div class="input-group">
+                                                <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email border-0" placeholder="Email">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary heading-font text-white" type="submit">Sign up</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                    
-                                    <!-- subscribe -->
-                                    <div class="widget widget-subscribe d-flex align-items-center">
-
-                                        <div class="p-7">
-
-                                            <div class="widget-content text-center">
-                                                <h3 class="text-white heading-font">Join <span>our club</span></h3>
-                                                <P class="h5 mb-2 text-white">Subscribe to the newslettr <br>and bye everything at the disconnect</P>
-                                                <form id="widget-subscribe-form" action="#" method="post">
-                                                    <div class="input-group">
-                                                        <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email border-0" placeholder="Email">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-primary heading-font text-white" type="submit">Sign up</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>  
-
-                                        </div>
-
-                                    </div><!-- subscribe -->
-    
-                                </div>
+                                </div><!-- subscribe -->
 
                             </div>
 
                             <div class="col-md-6 col-lg-3 border-end">
 
-                                <div class="product mt-2">                   
-
+                                <div class="product mt-2">          
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop3_4.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop3_5.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Top</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
-                                    </div> 
-                                    
+                                    </div>
                                     <div class="onbest">Best</div>
-    
                                 </div>
 
                             </div>
 
                             <div class="col-md-6 col-lg-3 border-end">
 
-                                <div class="product mt-2">                   
-
+                                <div class="product mt-2">                
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop3_5.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop3_6.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-2 text-center"><span class="product-categories heading-font"><a href="#">Sweatpants</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
                                     </div>   
-                                    
                                     <div class="onbest">Best</div>
-    
                                 </div>
 
                             </div>
 
                             <div class="col-md-6 col-lg-3 border-end">
 
-                                <div class="product mt-2">                   
-
+                                <div class="product mt-2">          
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop3_6.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop3_7.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Top</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
                                     </div> 
-                                    
                                     <div class="onbest">Best</div>
-    
                                 </div>
 
                             </div>
 
                             <div class="col-md-6 col-lg-3">
 
-                                <div class="product mt-2">                   
-
+                                <div class="product mt-2">             
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop3_7.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop3_1.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Sweatpants</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
                                     </div>     
-                                    
                                     <div class="onbest">Best</div>
-    
                                 </div>
 
                             </div>
@@ -440,9 +463,9 @@
 
                     </div>
 
-                </div>
+                </div><!-- Best Seller -->
 
-                 <!-- New project side
+                <!-- New Products
                 ============================================= -->
                 <div class="section pb-5">
 
@@ -456,122 +479,104 @@
 
                         <div class="row m-0">
 
-                            <div class="col-md-6 col-lg-2 border-end">
+                            <div class="col-md-6 col-lg-4 col-xxl-2 border-end">
 
-                                <div class="product">                   
-
+                                <div class="product">            
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop4_1.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop4_2.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Sweatpants</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
                                     </div>        
-    
                                 </div>
 
                             </div>
 
-                            <div class="col-md-6 col-lg-2 border-end">
+                            <div class="col-md-6 col-lg-4 col-xxl-2 border-end">
 
-                                <div class="product">                   
-
+                                <div class="product">                
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop4_2.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop4_3.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Sneakers</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
                                     </div>        
-    
                                 </div>
 
                             </div>
 
-                            <div class="col-md-6 col-lg-2 border-end">
+                            <div class="col-md-6 col-lg-4 col-xxl-2 border-end">
 
-                                <div class="product">                   
-
+                                <div class="product">       
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop4_3.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop4_4.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Sweatpants</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
                                     </div>        
-    
                                 </div>
 
                             </div>
 
-                            <div class="col-md-6 col-lg-2 border-end">
+                            <div class="col-md-6 col-lg-4 col-xxl-2 border-end">
 
-                                <div class="product">                   
-
+                                <div class="product">          
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop4_4.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop4_5.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Top</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
                                     </div>        
-    
                                 </div>
 
                             </div>
 
-                            <div class="col-md-6 col-lg-2 border-end">
+                            <div class="col-md-6 col-lg-4 col-xxl-2 border-end">
 
-                                <div class="product">                   
-
+                                <div class="product">          
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop4_5.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop4_6.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Top</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
-                                    </div>        
-    
+                                    </div>       
                                 </div>
 
                             </div>
 
-                            <div class="col-md-6 col-lg-2">
+                            <div class="col-md-6 col-lg-4 col-xxl-2">
 
-                                <div class="product">                   
-
+                                <div class="product">       
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/shop4_6.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/shop4_1.png" alt="Product Image" class="img-fluid"></a>
                                         <a class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>        
-    
                                     <div class="product-details">        
                                         <h3 class="product-title m-0 text-uppercase text-center"><a href="#">Sweatpants</a></h3>           
                                         <div class="product-info mb-1 text-center"><span class="product-categories heading-font"><a href="#">Sneakers</a></span></div>        
                                         <div class="product-price">$199<del class="ms-2">$259</del></div>   
-                                    </div>        
-    
+                                    </div>   
                                 </div>
 
                             </div>
@@ -580,25 +585,20 @@
 
                     </div>
 
-                </div>
+                </div><!-- New Products -->
 
                 <!-- Ads
                 ============================================= -->
-                <div class="ads ads1">
-
+                <div class="ads ads1 mb-0">
                     <div class="ads-bg">
-                        <img src="images/ads/ads1.png" alt="Ads Image" class="img-full w-100">
-                    </div>
-
-                    <div class="ads-body d-flex align-items-center">
-                        <div class="py-2 offset-xl-4 d-flex gap-2 align-items-center">
-                            <h2 class="heading-font m-0">55%</h2>
-                            <div>
-                                <a href="#" class="shop-now-link m-0 btn btn-default heading-font">Shop now</a>
-                            </div>
+                        <div class="ads-bg-img" style="background-image: url(images/ads/ads2.png);"></div>
+                    </div>        
+                    <div class="ads-body">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="h1 text-success mb-0 me-3">55%</h2>
+                            <a href="#" class="shop-now-link m-0 btn btn-outline-success heading-font">Shop now</a>
                         </div>
                     </div>
-
                 </div><!-- Ads -->
                     
             </div>
@@ -617,43 +617,34 @@
 
                     <div class="row py-5">
 
-                        <div class="col-md-12 col-xl-4">
+                        <div class="col-md-6 col-xl-4">
 
                             <div class="widget widget-links">
                                 <h4 class="widget-title text-white text-uppercase heading-font">CUSTOMER SERVICE</h4>
-                                <div class="widget-content d-flex">
-
-                                    <div class="col-md-6 col-lg-6">
-
-                                        <ul>
-                                            <li><a href="#">Help & FAQs</a></li>
-                                            <li><a href="#">Order Tracking</a></li>
-                                            <li><a href="#">Shipping & Delivery</a></li>
-                                            <li><a href="#">Orders History</a></li>
-                                            <li><a href="#">Advanced Search</a></li>
-                                        </ul>
-
-                                    </div>
-
-                                    <div class="col-md-6 col-lg-6">
-                                        
-                                        <ul>
-                                            <li><a href="#">My Account</a></li>
-                                            <li><a href="#">Careers</a></li>
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">Corporate Sales</a></li>
-                                            <li><a href="#">Privacy</a></li>
-                                        </ul>
-
-                                    </div>
-                                </div>                                    
+                                <div class="widget-content d-md-flex">
+                                    <ul class="flex-md-fill">
+                                        <li><a href="#">Help & FAQs</a></li>
+                                        <li><a href="#">Order Tracking</a></li>
+                                        <li><a href="#">Shipping & Delivery</a></li>
+                                        <li><a href="#">Orders History</a></li>
+                                        <li><a href="#">Advanced Search</a></li>
+                                    </ul>
+                                    <ul class="flex-md-fill">
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Corporate Sales</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                    </ul>
+                                </div>                                 
                             </div> 
 
                         </div>
 
-                        <div class="col-lg-4 pt-3">
-
+                        <div class="col-md-6 col-xl-4">
+                            
                             <div class="widget widget-custom-html">
+                                <h4 class="widget-title">&nbsp;</h4>
                                 <div class="widget-content">
                                     <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -662,7 +653,7 @@
 
                         </div>
 
-                        <div class="offset-xl-1 col-lg-3">
+                        <div class="col-xl-4 pt-3 pt-lg-0">
 
                             <div class="widget widget-custom-html">
                                 <div class="widget-content text-end">
@@ -695,39 +686,34 @@
 
                     <div class="row g-0 justify-content-between align-items-center">
     
-                        <div class="col-lg-auto">
+                        <div class="col-lg-auto d-flex align-items-md-center justify-content-md-between flex-column flex-md-row">
 
-                            <div class="widget widget-social mb-lg-0">
+                            <p class="copyright body-font m-0 me-md-4 text-center text-md-start" id="copyrights">&copy; Copyright 2021</p>
+
+                            <div class="widget widget-social mb-0 pt-2 pt-md-0">
                                 <div class="widget-content">
-                                    <div class="row align-items-center justify-content-between">
-                                        <div class="col-sm-auto d-flex justify-content-center">
-                                            <span class="copyright body-font my-1" id="copyrights">&copy; Copyright 2021</span>
-                                        </div>
-                                        <div class="col-sm-auto">
-                                            <ul class="social-icons d-flex align-items-center justify-content-center my-1">
-                                                <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#" target="_blank" title="Youtube"><i class="fab fa-youtube-square"></i></a></li>
-                                                <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#" target="_blank" title="Google"><i class="fab fa-google-plus-g"></i></a></li>
-                                                <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <ul class="social-icons d-flex align-items-center justify-content-center my-1">
+                                        <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" target="_blank" title="Youtube"><i class="fab fa-youtube-square"></i></a></li>
+                                        <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#" target="_blank" title="Google"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
 
                         </div>
     
-                        <div class="col-lg-auto">
+                        <div class="col-lg-auto pt-2 pt-lg-0">
     
                             <div class="widget widget-payment mb-lg-0">
                                 <div class="widget-content">
                                     <div class="payments d-flex justify-content-center">
-                                        <span class="payment-icon"><img src="images/payments/express.png" alt="American Express"></span>
-                                        <span class="payment-icon"><img src="images/payments/visa.png" alt="Visa"></span>
-                                        <span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal"></span>
-                                        <span class="payment-icon"><img src="images/payments/mastercard.png" alt="Mastercard"></span>
-                                        <span class="payment-icon"><img src="images/payments/jcb.png" alt="JCB"></span>
+                                        <span class="payment-icon visa"></span>
+                                        <span class="payment-icon paypal"></span>
+                                        <span class="payment-icon express"></span>
+                                        <span class="payment-icon mastercard"></span>
+                                        <span class="payment-icon jcb"></span>
                                     </div>                                    
                                 </div>
                             </div>
@@ -751,5 +737,8 @@
     
     <!-- Slick JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Theme JS -->
+    <script src="js/main.js"></script>
 
 </body>

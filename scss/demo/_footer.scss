@@ -23,7 +23,7 @@
 	}
 
 	a {
-		text-decoration: none !important;
+		text-decoration: none;
 	}
 }
 
@@ -32,10 +32,6 @@
 	padding-top: 2rem;
 	font-size: 0.685rem;
 	padding-bottom: 3rem;
-
-	@include media-breakpoint-down(sm) {
-		padding: 1rem !important;
-	}
 }
 
 #footer-bottom {
@@ -49,8 +45,4 @@
 	line-height: 2;
 	z-index: 1;	
 	font-size: 0.875rem;
-
-	@include media-breakpoint-down(sm) {
-		font-size: 0.7rem;
-	}
 }

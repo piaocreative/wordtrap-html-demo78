@@ -24,10 +24,6 @@
 		color: #2a2a2a;
 		font-size: 3.625rem;
 		font-weight: 500;
-
-		@include media-breakpoint-down(sm) {
-			font-size: 2rem;
-		}
 	}
 
 	.sub-title {		
@@ -51,8 +47,8 @@
 	}
 
 	@include media-breakpoint-down(lg) {
-		height: auto !important;
-		padding: 0 !important;
+		height: auto;
+		padding: 0;
 		margin-bottom: 1.25rem;
 	}
 }

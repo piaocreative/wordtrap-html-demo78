@@ -3,7 +3,10 @@
 	Contact.scss
 
 -----------------------------------------------------------------*/
-.contact {
+.contact-content {
+	padding-top: 12.625rem;
+	padding-bottom: 3.875rem;
+
 	.contact-title {
 		font-size: $h1-font-size;
 		font-family: $body-font;
@@ -13,7 +16,6 @@
 	}
 
 	.contact-icons {
-
         padding: 0;
         list-style: none;
 
@@ -64,15 +66,19 @@
 			font-size: 0.875rem;
 		}
     }
+}
 
-    @include media-breakpoint-down(lg) {
-        .contact-icons {
-            margin: 0 !important;
-            padding: 0.875rem;
-        }
+#map {
+	position: absolute;
+    width: calc(50vw + 1320px / 12);
+    height: 100%;
+    left: 0;
+    top: 0;
 
-        form {
-            padding: 1rem !important;
-        }
+	@include media-breakpoint-down(lg) {
+        position: initial;
+        width: 100%;
+        height: 30rem;
+		margin-bottom: 3.875rem;
     }
 }

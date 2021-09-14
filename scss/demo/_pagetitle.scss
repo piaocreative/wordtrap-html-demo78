@@ -17,12 +17,6 @@
 
 #page-title {
 	position: relative;
-	
-	@include media-breakpoint-down(lg) {
-		padding-top: 0 !important;
-		padding-left: 1rem !important;
-		padding-right: 1rem !important;
-	}
 
 	.sub-title {
 		font-weight: 500;
@@ -37,11 +31,6 @@
 		font-size: 4rem;
 		color: white;
 		line-height: 5.5rem;
-
-		@include media-breakpoint-down(md) {
-			font-size: 3rem;
-			line-height: 3.5rem;
-		}
 	}
 
 	span {

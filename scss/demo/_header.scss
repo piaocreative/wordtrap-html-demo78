@@ -22,7 +22,7 @@
 
 	// Transparent header
 	&.transparent-header {
-		background-color: #857db8;
+		background-color: #050505;
 		z-index: 199;
 
 		@include media-breakpoint-up(lg) {
@@ -40,16 +40,8 @@
 }
 
 #header-wrap {
-	padding-left: 4.375rem;
-	
-	@include media-breakpoint-down(lg) {
-		padding-right: 4.375rem;
-	}
-
-	@include media-breakpoint-down(sm) {
-		padding-left: 2.375rem;
-		padding-right: 2.375rem;
-	}
+	padding-left: 2.375rem;
+	padding-right: 2.375rem;
 }
 
 .nav {
@@ -62,15 +54,17 @@
 }
 
 .navbar-toggler {
+	border: 0;
 	border-radius: 0;
 }
 
-.navbar-collapse {
-	padding: 1rem 0;
-
-	@include media-breakpoint-up(lg) {
-		padding: 0;
-	}
+.navbar-collapse {	
+	background-color: #050505;
+	// border-radius: 0.5rem;
+	padding: 1rem 2.375rem;
+	position: absolute;
+	left: 0;
+	right: 0;
 }
 
 
@@ -84,11 +78,10 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	margin-right: 2.25rem;
+	margin-right: 5.25rem;
 
 	img {
-		width: 60%;
-		height: auto;
+		max-width: 8.875rem;
 	}
 }
 
@@ -112,7 +105,7 @@
 	@include media-breakpoint-up(lg) {
 		padding: 2.5rem 4rem;
 		position: absolute;
-		right: 0;
+		right: -2.375rem;
 		top: 0;
 		background-color: white;
 		border-bottom-left-radius: 0.5rem;
@@ -164,19 +157,13 @@
 
 #top-links {
 	.nav-item {			
-		@include media-breakpoint-up(lg) {
-			padding-right: 1.875rem;		
-		}
+		padding-right: 1.875rem;	
 	}
 
 	a.nav-link {
 		color: $top-btn-font-color;
 		display: block;
 		font-size: 0.75rem;	
-		
-		@include media-breakpoint-up(lg) {
-			padding: 0;		
-		}
 
 		&:hover {
 			color: $theme-color;
@@ -192,7 +179,8 @@
 	.dropdown-menu {
 		background: $white;
 		border: 0;
-		top: 1.5rem;
+		position: absolute;
+		top: 100%;
 		left: 0;
 		width: 100%;		
 		margin: 0;
